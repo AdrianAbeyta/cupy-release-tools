@@ -180,7 +180,7 @@ class Controller(object):
             [x['pyenv'] for x in WHEEL_PYTHON_VERSIONS.values()])
         log('Building Docker image: {}'.format(image_tag))
         run_command(
-            'docker', 'build',
+            'cupy/docker', 'build',
             '--file', f'{docker_ctx}/{builder_dockerfile}',
             '--tag', image_tag,
             '--cache-from', image_tag,

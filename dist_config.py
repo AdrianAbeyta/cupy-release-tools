@@ -147,6 +147,18 @@ WHEEL_LINUX_CONFIGS = {
         'verify_systems': ['default'],
         'system_packages': 'rocm-hip-sdk hip-runtime-amd roctracer-dev'  # NOQA
     },
+    'rocm-5.6': {
+        'name': 'cupy-rocm-5-6',
+        'kind': 'rocm',
+        'platform_version': '5.6',
+        'image': 'rocm/dev-ubuntu-22.04',
+        'libs': [],
+        'includes': [],
+        'preloads': [],
+        'verify_image': 'rocm/rocm-terminal:5.6.1',
+        'verify_systems': ['default'],
+        'system_packages': 'rocm-hip-sdk hip-runtime-amd roctracer-dev'  # NOQA
+    },
 }
 
 # Key-value of CUDA version and its corresponding build settings for Windows.
